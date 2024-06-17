@@ -1,28 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     var popupModal = document.getElementById('popupModal');
     var calendlyModal = document.getElementById('calendlyModal');
-    var popupModalContent = document.querySelector('#popupModal .modal-content');
     var calendlyModalContent = document.querySelector('#calendlyModal .modal-content');
-    var continueButton = document.getElementById('continueButton');
-    var closeModal = document.getElementById('closeModal');
+  var closeModal = document.getElementById('closeModal');
     var button = document.querySelector('.button');
     var button1 = document.querySelector('.button1');
 
      calendlyModal.style.display = 'none';
     
-    if (popupModal && continueButton) {
-        continueButton.addEventListener('click', function() {
-            popupModalContent.classList.add('float-out');
-            popupModal.classList.add('fade-out');
-
-            // Wait for the animation to finish before hiding the modal
-            setTimeout(function() {
-                popupModal.style.display = 'none';
-            }, 250); // Match the duration of the animation
-        });
-    } else {
-        console.log('Popup Modal or continue button not found');
-    }
 
     if (calendlyModal && closeModal) {
         closeModal.addEventListener('click', function() {
@@ -59,9 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('click', function(event) {
-        if (event.target === popupModal) {
-            popupModal.style.display = 'none';
-        }
         if (event.target === calendlyModal) {
             calendlyModal.style.display = 'none';
         }
@@ -122,24 +104,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-    navMenu.addEventListener('click', function() {
-        closeMenu.style.display = 'none'; // Hide the close menu button
-        hamburgerMenu.style.display = 'block'; // Show the hamburger menu button
-        navMenu.classList.remove('show');
-        bodyContent.forEach(function(element) {
-            element.classList.remove('blur');
-        });
-    });
-
-    var navLinks = navMenu.querySelectorAll('a');
-    navLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
-            closeMenu.style.display = 'none'; // Hide the close menu button
-            hamburgerMenu.style.display = 'block'; // Show the hamburger menu button
-            navMenu.classList.remove('show');
-            bodyContent.forEach(function(element) {
-                element.classList.remove('blur');
-            });
-        });
-    });
