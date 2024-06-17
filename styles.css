@@ -243,9 +243,7 @@
         margin-top: 0;
         text-align: left;
     }
-    
-    
-        .grey-box {
+   .grey-box {
            display: flex;
     align-items: center;
     background-color: #262626;
