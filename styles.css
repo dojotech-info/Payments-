@@ -88,162 +88,294 @@
         margin-top: 25px;
     }
     
-    .button-and-image {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+          .button-and-image {
+     display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
     }
     
-    .button {
+    .button1 {
         background-color: #FFB100;
         color: black;
         border: none;
-        font-size: 1em;
         border-radius: 25px;
-        width: 9em;
-        padding: 0.75em 0.5em;
+        padding: 1em 1.8em;
+        font-size: 1em;
         cursor: pointer;
         font-weight: bold;
-        margin-left: -2em;
+        line-height: 16px;
+        min-width: 118px;
+        width: auto;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-decoration: none;
+        font-family: dm sans bold, sans-serif;
+        font-weight: 400;
+        vertical-align: top;
     }
     
-    .trustpilot {
-        width: 17em;
-        height: auto;
-        margin-left: -3.5em;
-        margin-top: 1em;
-    
+    .divider {
+        border-top: 0.5px solid grey;
+        margin: 0px 0 0 0;
     }
     
+    .dividerwide {
+          border-top: 15px solid grey;
+    margin: 0px 0 0;
+    margin-top: 5em;
+    width: -webkit-fill-available;
+    }
+    
+    
+    .blue-box {
+    display: flex;
+    background-color: #E5F6F4;
+    padding: 2em;
+    margin-top: -0.5px;
+    justify-content: space-evenly;
+    width: -webkit-fill-available;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: fit-content;
+    align-content: center;
+    align-items: center;
+
+    }
+    
+    .info-image {
+       width: 29%;
+    height: auto;
+        
+    }
+    
+    .text-box {
+    width: 47em;
+    }
+    
+    .text-box h1 {
+      font-size: 3em;
+    font-family: 'DM Sans Bold', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    width: auto;
+    }
+    
+    .text-box p {
+     font-size: 1.3em;
+    width: auto;
+    text-align: left;
+    }
+    .text-box p1 {
+        font-size: 20px;
+        margin: 10px 0;
+            width: 350px;
+        text-align: left;
+    }
+    .text-box mh1 {
+        font-size: 56px;
+        font-family: 'DM Sans Bold', sans-serif;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .text-box m {
+        font-size: 22px;
+        margin: 10px 0;
+        width: 520px;
+        text-align: left;
+    }
+    .text-box m1 {
+        font-size: 20px;
+        margin: 10px 0;
+            width: 350px;
+        text-align: left;
+    }
+    .text-box .button {
+        margin-top: 20px;
+    }
+    
+    .white-box {
+ display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 20px;
+    height: 24em;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+     
+    .bottom-box {
+         display: flex;
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-top: -0.5px;
+    position: relative;
+    height: fit-content;
+    margin-left: -1em;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    }
     .text-body {
-        padding: 2em;
-        width: 100%;
-        box-sizing: border-box;
+      padding: 30px;
+    width: 566px;
     }
     
     .text-body h2 {
-        font-size: 2em;
-        margin-top: 1em;
+        font-size: 32px;
+        font-family: 'DM Sans Bold', sans-serif;
+        font-weight: bold;
         text-align: left;
+        margin-top: 20px;
     }
     
-    .text-body p {
-        font-size: 1.25em;
-        margin-top: 0;
+    .text-body p2  {
+        font-size: 16px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: medium;
         text-align: left;
-    }
-    
-    .funding-video {
-        width: 100%;
-        height: auto;
-    }
-    
-    .fund-image {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        display:none;
+        margin-top: 20px;
     }
     
     .text-body-low {
-        padding: 2em;
-        width: 100%;
-        box-sizing: border-box;
+        min-height: 500px;
+        padding: 30px;
+        width: 520px;
+    }
+    
+    .text-body-low h2 {
+        font-size: 32px;
+        font-family: 'DM Sans Bold', sans-serif;
+        font-weight: bold;
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    .text-body-low p2  {
+        font-size: 16px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: medium;
+        text-align: left;
+        margin-top: 20px;
     }
     
     .text-body-out {
-        padding: 2em;
-        width: 100%;
-        box-sizing: border-box;
+        padding: 30px;
+        text-align: center;
     }
     
     .text-body-out h3 {
-        font-size: 2em;
-        margin-top: 0;
-        text-align: left;
+      font-size: 44px;
+    font-family: 'DM Sans Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
     }
     
-    .text-body-out p {
-        font-size: 1.25em;
-        margin-top: 0;
-        text-align: left;
+    .text-body-out p3  {
+        font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    }
+
+    .text-small{
+          display: flex;
     }
     
     .text-small-left {
-        padding: 2em;
-        width: 100%;
-        box-sizing: border-box;
-        margin-top: -1.5em;
+
+        padding: 15px;
+        width: 371px;
+        text-align: center;
     }
     
     .text-small-left h4 {
-        font-size: 1.5em;
-        margin-top: 0;
-        text-align: left;
+       font-size: 18px;
+    font-family: 'DM Sans Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
     }
     
-    .text-small-left p {
-        font-size: 1.25em;
-        margin-top: 0;
-        text-align: left;
+    .text-small-left p4  {
+          font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
     }
+    
     
     .text-small-right {
-        padding: 2em;
-        width: 100%;
-        box-sizing: border-box;
+        padding: 15px;
+        width: 371px;
+        text-align: center;
     }
     
     .text-small-right h4 {
-        font-size: 1.5em;
-        margin-top: 0;
-        text-align: left;
+            font-size: 18px;
+    font-family: 'DM Sans Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
     }
     
-    .text-small-right p {
-        font-size: 1.25em;
-        margin-top: 0;
-        text-align: left;
-    }
-
-         .text-small-leftd {
-        padding: 2em;
-        width: 100%;
-        box-sizing: border-box;
-        margin-top: -5.5em;
+    .text-small-right p4  {
+           font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
     }
     
-.text-small-leftd h4 {
-    font-size: 1.5em;
-    margin-top: 3em;
-    text-align: left;
-}
-    
-    .text-small-leftd p {
-        font-size: 1.25em;
-        margin-top: 0;
-        text-align: left;
+    .text-small-leftd {
+      padding: 15px;
+        width: 371px;
+        text-align: center;
     }
+    
+    .text-small-leftd h4 {
+            font-size: 18px;
+    font-family: 'DM Sans Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    }
+    
+    .text-small-leftd p4  {
+         font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    }
+    
     
     .text-small-rightd {
-        padding: 2em;
-        width: 100%;
-        box-sizing: border-box;
+     padding: 15px;
+        width: 371px;
+        text-align: center;
     }
     
     .text-small-rightd h4 {
-        font-size: 1.5em;
-        margin-top: 0;
-        text-align: left;
+        font-size: 18px;
+    font-family: 'DM Sans Bold', sans-serif;
+    font-weight: bold;
+    text-align: center;
     }
     
-    .text-small-rightd p {
-        font-size: 1.25em;
-        margin-top: 0;
-        text-align: left;
+    .text-small-rightd p4  {
+         font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
     }
-   .grey-box {
+    .small-up, .small-down{
+          display: flex;
+    }
+    
+     .grey-box {
            display: flex;
     align-items: center;
     background-color: #262626;
